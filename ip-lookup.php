@@ -10,10 +10,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>IP Lookup</title>
 </head>
+<style>
+    .header{
+        background-color: #000b76;
+        
+    }
+    .backimg{
+        background-image: url('wave.svg');
+        height: 70px;
+    }
+    #iplookupbtn{
+        background-color: #000b76;
+        color: #fff;
+    }
+</style>
 <header>
-    <div class="header bg-dark text-white text-center pt-4 pb-4">
+    <div class="header text-white text-center pt-3 pb-3">
         <h4>IP Lookup</h4>
     </div>
+    <div class="backimg"></div>
 </header>
 <body>
 
@@ -23,7 +38,7 @@
             <input type="text" name="" id="ipadd" class="form-control" placeholder="IP Address (eg: 127.0.0.1)">
         </div>
         <div class="header-lookup text-center form-group mt-4">
-           <input type="button" value="Lookup" id="iplookupbtn" class="btn btn-primary">
+           <input type="button" value="Lookup" id="iplookupbtn" class="btn col-4">
         </div>
         <div class="mt-5 body-details">
         <?php
@@ -75,7 +90,7 @@
                 echo 'Your IP Address - '.$myip;
             ?>
         </div>
-        <p> &copy; arunpandiyan.in</p>
+        <p><?php echo date('Y');?> &copy; arunpandiyan.in</p>
     </div>
    
 <!-- Jquery -->
